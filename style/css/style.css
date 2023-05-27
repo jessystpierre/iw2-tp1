@@ -1,17 +1,115 @@
+@font-face {
+  font-family: "alegreya";
+  src: url("../../fonts/alegreya/AlegreyaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "oldfenris";
+  src: url("../../fonts/oldfenris/oldfenris.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* Variables */
 /* Global styles */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "alegreya", sans-serif;
+  font-size: 1.8rem;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "oldfenris", sans-serif;
+  color: #D2C8AE;
 }
 
 html {
-  background-color: black;
+  font-size: 62.5%;
 }
+
+.hidden {
+  display: none;
+}
+
+/* Header */
+header {
+  position: relative;
+  overflow: hidden;
+}
+header .logo {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+header .logo__image {
+  width: 100%;
+  max-width: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .background-video-container {
+  display: none;
+}
+header .background-image-container {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+header .background-image-container__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .nav-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+  background: #181818;
+  z-index: 1;
+}
+header .burger-menu {
+  padding: 1.5rem;
+}
+header .menu {
+  display: none;
+  list-style: none;
+  text-align: center;
+}
+header .menu.nav-active {
+  display: block;
+}
+header .menu__items {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+  display: inline-block;
+  padding: 0.5rem;
+}
+header .menu__items:hover {
+  color: #D2C8AE;
+}
+header .video-promo-container__video {
+  width: 100%;
+  padding: 3rem 1.5rem 3rem 1.5rem;
+}
+
+/*.container{
+    width: 90%;
+	max-width: 1600px;
+	margin: 0 auto;
+
+}
+.video-container{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    &__video{
+        width: 100%;
+        object-fit: cover;
+    }
+}*/
