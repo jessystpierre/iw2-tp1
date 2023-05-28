@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $text-font;
+    font-size: 1.8rem;
+    color: $text-color;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: $title-font;
+    color: $title-color;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+}
+html{
+    font-size: 62.5%;
+}
+.hidden{
+    display: none;
+
+}

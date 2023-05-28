@@ -37,59 +37,80 @@
             <div class="video-promo-container">
                 <video class="video-promo-container__video" src="medias/d4-bande-annonce.mp4" controls poster="medias/D4_Thumbnail.webp"></video>
             </div>
-            
-            
         </div>
     </header>
     <main>
-        <section>
-            <div>
-                <h2>Les enfers vous souhaitent la bienvenue</h2>
-                <p>Diablo® IV propose une expérience de jeu de rôle et d’action ultime, offrant une quantité inépuisable d’ennemis à abattre, d’innombrables techniques à maîtriser, des donjons cauchemardesques et un butin légendaire. Lancez-vous dans la campagne, en solo ou à plusieurs, dans un environnement d’une beauté sombre ou explorez un vaste monde partagé où les joueurs et joueuses se retrouveront dans les villes pour commercer, s’allieront pour combattre les boss hors instance ou se lanceront dans des zones JcJ afin de mettre leurs compétences à l’épreuve contre d’autres personnes.</p>
-            </div>
-            <div>
-                <article>
-                    <img src="medias/champs-mortels.webp" alt="Champs Mortels">
-                    <h3>Champs Mortels</h3>
-                    <p>Ceux qui sont assez courageux pour s’aventurer sur ces champs maudits auront pour mission de récolter et purifier des éclats de haine cristallisée grâce à un rituel ancestral, au risque d’attirer des adversaires capables de massacrer jusqu’à leurs propres alliés pour s’approprier les éclats.</p>
-                </article>
-                <article>
-                    <img src="medias/paysages-infernaux.webp" alt="Paysages infernaux">
-                    <h3>Paysages infernaux</h3>
-                    <p>Les aventuriers sanguinaires ne sont pas la seule menace que les héros croiseront dans les steppes Arides. Le sommet de la Fulmination, un volcan en activité, menace la zone et sème ka destruction en déchainant des pluies de cendres sur les malheureux voyageurs.</p>
-                </article>
-                <article>
-                    <img src="medias/danger-omnipresent.webp" alt="Danger omniprésent">
-                    <h3>Danger omniprésent</h3>
-                    <p>Les geysers du Tabak blanc ont beau avoir l’air inoffensif, ils sont capables d’ébouillanter les monstres et les aventuriers qui s’en approchent d’un peu trop près. Les héros ne prêtant pas assez attention à leurs alliés et à leur environnement y connaitront une fin précoce.</p>
-                </article>
-            </div>
+        <section class="section-about">
+            <div class="section-about__container">
+                <div class="about">
+                    <h2 class="about__title">Les enfers vous souhaitent la bienvenue</h2>
+                    <p class="about__text">Diablo® IV propose une expérience de jeu de rôle et d’action ultime, offrant une quantité inépuisable d’ennemis à abattre, d’innombrables techniques à maîtriser, des donjons cauchemardesques et un butin légendaire. Lancez-vous dans la campagne, en solo ou à plusieurs, dans un environnement d’une beauté sombre ou explorez un vaste monde partagé où les joueurs et joueuses se retrouveront dans les villes pour commercer, s’allieront pour combattre les boss hors instance ou se lanceront dans des zones JcJ afin de mettre leurs compétences à l’épreuve contre d’autres personnes.</p>
+                </div>
+                <div class="info-card-container">
+                    <article class="info-card">
+                        <img class="info-card__img" src="medias/champs-mortels.webp" alt="Champs Mortels">
+                        <h3 class="info-card__title">Champs Mortels</h3>
+                        <p class="info-card__text">Ceux qui sont assez courageux pour s’aventurer sur ces champs maudits auront pour mission de récolter et purifier des éclats de haine cristallisée grâce à un rituel ancestral, au risque d’attirer des adversaires capables de massacrer jusqu’à leurs propres alliés pour s’approprier les éclats.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="info-card__img" src="medias/paysages-infernaux.webp" alt="Paysages infernaux">
+                        <h3 class="info-card__title">Paysages infernaux</h3>
+                        <p class="info-card__text">Les aventuriers sanguinaires ne sont pas la seule menace que les héros croiseront dans les steppes Arides. Le sommet de la Fulmination, un volcan en activité, menace la zone et sème ka destruction en déchainant des pluies de cendres sur les malheureux voyageurs.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="info-card__img" src="medias/danger-omnipresent.webp" alt="Danger omniprésent">
+                        <h3 class="info-card__title">Danger omniprésent</h3>
+                        <p class="info-card__text">Les geysers du Tabak blanc ont beau avoir l’air inoffensif, ils sont capables d’ébouillanter les monstres et les aventuriers qui s’en approchent d’un peu trop près. Les héros ne prêtant pas assez attention à leurs alliés et à leur environnement y connaitront une fin précoce.</p>
+                    </article>
+                </div>
+            </div>   
         </section>
         <section class="gallery">
-            <img src="medias/galerie-1.webp" alt="La classe barbare dans le monde de diablo 4">
-            <img src="medias/galerie-2.webp" alt="Entrée de grotte du jeux">
-            <img src="medias/galerie-3.webp" alt="Art conceptuel de zone du jeux">
-            <img src="medias/galerie-4.webp" alt="Art conceptuel de zone du jeux">
-            <img src="medias/galerie-5.webp" alt="Art conceptuel de zone du jeux">
-            <img src="medias/galerie-6.webp" alt="La classe druide en jeux">
+            <picture>
+                <source srcset="medias/galerie-1-desktop.png" media="(min-width: 1200px)"/>
+                <img class="gallery__img" src="medias/galerie-1.webp" alt="La classe barbare dans le monde de diablo 4">
+            </picture>
+            <picture>
+                <source srcset="medias/galerie-2-desktop.png" media="(min-width: 1200px)"/>
+                <img class="gallery__img" src="medias/galerie-2.webp" alt="Entrée de grotte du jeux">
+            </picture>
+            <picture>
+                <source srcset="medias/galerie-3-desktop.png" media="(min-width: 1200px)"/>
+                <img class="gallery__img" src="medias/galerie-3.webp" alt="Art conceptuel de zone du jeux">
+            </picture> 
+            <picture>
+                <source srcset="medias/galerie-4-desktop.png" media="(min-width: 1200px)"/>
+                <img class="gallery__img" src="medias/galerie-4.webp" alt="Art conceptuel de zone du jeux">
+            </picture>
+            <picture>
+                <source srcset="medias/galerie-5-desktop.png" media="(min-width: 1200px)"/>
+                <img class="gallery__img" src="medias/galerie-5.webp" alt="Art conceptuel de zone du jeux">
+            </picture>
+            <picture>
+                <source srcset="medias/galerie-6-desktop.png" media="(min-width: 1200px)"/>
+                <img class="gallery__img" src="medias/galerie-6.webp" alt="La classe druide en jeux">
+            </picture>        
         </section>
-        <section>
-            <img src="medias/statistique-beta.png" alt="Fiche de statistiques de la bêta">
-            <div>
-                <h2>Des statistiques</h2>
-                <p>Dans le royaume de Diablo 4, les joueurs ont passé plus de 20 millions d'heures, faisant face à de nombreux périls et subissant plus de 17 millions de morts. Ils ont tué pas moins de 9 milliards de monstres, dont le célèbre Butcher et le redoutable Ashava. Les batailles livrées dans ce monde sombre sont épiques et les héros continuent d'augmenter, laissant leur marque sur les contes légendaires de Sanctuary.</p>
+        <section class="section-statistique">
+            <div class="section-statistique__container">
+                <img class="section-statistique__img" src="medias/statistique-beta.png" alt="Fiche de statistiques de la bêta">
                 <div>
-                    <div>
-                        <span>20M</span>
-                        <span>Heures jouées</span>
+                    <h2 class="section-statistique__title">Des statistiques</h2>
+                    <p class="section-statistique__text">Dans le royaume de Diablo 4, les joueurs ont passé plus de 20 millions d'heures, faisant face à de nombreux périls et subissant plus de 17 millions de morts. Ils ont tué pas moins de 9 milliards de monstres, dont le célèbre Butcher et le redoutable Ashava. Les batailles livrées dans ce monde sombre sont épiques et les héros continuent d'augmenter, laissant leur marque sur les contes légendaires de Sanctuary.</p>
+                    <div class="text-stats-container">
+                        <div class="text-stats-container__hours">
+                            <span class="section-statistique__text section-statistique__text--big">20M</span>
+                            <span class="section-statistique__text section-statistique__text--small">Heures jouées</span>
+                        </div>
+                        <div class="text-stats-container__monsters">
+                            <span class="section-statistique__text section-statistique__text--big">9B</span>
+                            <span class="section-statistique__text section-statistique__text--small">Montres tués</span>
+                        </div>
                     </div>
-                    <div>
-                        <span>9B</span>
-                        <span>Montres tués</span>
-                    </div>
+                    <a class="section-statistique__button" href="#">Voir plus</a>
                 </div>
-                <a href="#">Voir plus</a>
             </div>
+            
         </section>
         <section>
             <div>

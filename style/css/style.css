@@ -10,19 +10,20 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Variables */
-/* Global styles */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "alegreya", sans-serif;
   font-size: 1.8rem;
+  color: rgb(216, 216, 216);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "oldfenris", sans-serif;
   color: #D2C8AE;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
 }
 
 html {
@@ -33,7 +34,6 @@ html {
   display: none;
 }
 
-/* Header */
 header {
   position: relative;
   overflow: hidden;
@@ -84,17 +84,115 @@ header .menu.nav-active {
   display: block;
 }
 header .menu__items {
-  text-decoration: none;
   color: rgb(216, 216, 216);
+  text-decoration: none;
   display: inline-block;
   padding: 0.5rem;
 }
 header .menu__items:hover {
   color: #D2C8AE;
 }
+header .menu .close-menu {
+  color: rgb(255, 112, 112);
+  text-decoration: underline;
+  display: inline-block;
+  padding: 0.5rem;
+}
+header .menu .close-menu:hover {
+  color: rgb(216, 216, 216);
+}
 header .video-promo-container__video {
   width: 100%;
   padding: 3rem 1.5rem 3rem 1.5rem;
+}
+
+.section-about {
+  background-image: url("../../medias/leather-texture.webp");
+}
+.section-about__container {
+  padding: 3rem 1.5rem 0 1.5rem;
+}
+.section-about .about__title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.section-about .about__text {
+  padding-bottom: 2rem;
+}
+.section-about .info-card-container .info-card {
+  padding: 3rem 0 3rem 0;
+}
+.section-about .info-card-container .info-card__img {
+  width: 100%;
+}
+.section-about .info-card-container .info-card__title {
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.gallery {
+  padding: 3rem 1.5rem 3rem 1.5rem;
+  background-color: #181818;
+}
+.gallery__img {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+}
+
+.section-statistique {
+  background-color: #1D0202;
+}
+.section-statistique__container {
+  padding: 3rem 1.5rem 3rem 1.5rem;
+}
+.section-statistique__img {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+}
+.section-statistique__title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.section-statistique__text {
+  display: inline-block;
+}
+.section-statistique__text--big {
+  font-size: 2.8rem;
+  padding: 0;
+}
+.section-statistique__text--small {
+  font-size: 1.6rem;
+}
+.section-statistique__button {
+  background-color: rgb(141, 0, 0);
+  color: rgb(216, 216, 216);
+  border: 1px solid rgb(141, 0, 0);
+  padding: 1rem;
+  border-radius: 3px;
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.section-statistique__button:hover {
+  background-color: #D2C8AE;
+  color: black;
+  border-color: #D2C8AE;
+}
+.section-statistique .text-stats-container {
+  display: flex;
+  margin: 2rem 0 2rem 0;
+}
+.section-statistique .text-stats-container__hours, .section-statistique .text-stats-container__monsters {
+  display: flex;
+  flex-direction: column;
+}
+.section-statistique .text-stats-container__monsters {
+  padding-left: 5rem;
 }
 
 /*.container{

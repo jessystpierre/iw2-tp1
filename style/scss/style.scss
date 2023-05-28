@@ -1,113 +1,12 @@
-@font-face {
-    font-family: 'alegreya';
-    src: url('../../fonts/alegreya/AlegreyaSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'oldfenris';
-    src: url('../../fonts/oldfenris/oldfenris.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-/* Variables */
-$text-color: rgb(216, 216, 216);
-$title-color: #D2C8AE;
-$title-font: 'oldfenris', sans-serif;
-$text-font: 'alegreya', sans-serif;
-
-/* Global styles */
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: $text-font;
-    font-size: 1.8rem;
-}
-h1, h2, h3, h4, h5, h6{
-    font-family: $title-font;
-    color: $title-color;
-}
-html{
-    font-size: 62.5%;
-}
-.hidden{
-    display: none;
-}
-
-/* Header */
-header{
-    position: relative;
-    overflow: hidden;
-
-    .logo{
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        &__image{
-            width: 100%;
-            max-width: 40rem;
-            object-fit: cover;
-        }
-    }
-    
-    .background-video-container{
-        display: none;
-    }
-
-    .background-image-container{
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        width: 100%;
-        &__image{
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-
-    .nav-active{
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 1rem;
-        width: 100%;
-        background: #181818;
-        z-index: 1;
-    }
-
-    .burger-menu{
-        padding: 1.5rem;
-    }
-
-    .menu{
-        display: none;
-        list-style: none;
-        text-align: center;
-        &.nav-active{
-            display: block;
-        }
-        &__items{
-            text-decoration: none;
-            color: $text-color;
-            display: inline-block;
-            padding: 0.5rem;
-            &:hover{
-                color: $title-color;
-            }
-        }
-    }
-
-    .video-promo-container{
-        
-        &__video{
-            width: 100%;
-            padding: 3rem 1.5rem 3rem 1.5rem ;
-        }
-        
-    }
-
-}
+// @use ne fctionne pas
+@import 'fontface';
+@import 'variables';
+@import 'mixins';
+@import 'general';
+@import 'header';
+@import 'apropos';
+@import 'galerie';
+@import 'statistique';
 
 
 
