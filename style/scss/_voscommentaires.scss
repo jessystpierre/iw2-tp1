@@ -1,0 +1,16 @@
+.section-commentaire{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    background-image: url('../../medias/d4-world-bg-footer.webp');
+    background-size: cover;
+    .form{
+        align-self: center;
+        background-color: $background-color-1;
+        width: 100%;
+        max-width: 40rem;
+        padding: 3rem 0 3rem 0;
+        border-radius: 3px;
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+}

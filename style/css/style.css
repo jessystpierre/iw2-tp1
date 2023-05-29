@@ -106,28 +106,28 @@ header .video-promo-container__video {
   padding: 3rem 1.5rem 3rem 1.5rem;
 }
 
-.section-about {
+.section-about, .section-heros {
   background-image: url("../../medias/leather-texture.webp");
 }
-.section-about__container {
+.section-about__container, .section-heros__container {
   padding: 3rem 1.5rem 0 1.5rem;
 }
-.section-about .about__title {
+.section-about .about__title, .section-heros .about__title, .section-heros .heros-card-container .heros-card__title, .section-heros .heros-info__title {
   font-size: 3.4rem;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 2rem;
 }
-.section-about .about__text {
+.section-about .about__text, .section-heros .about__text, .section-heros .heros-card-container .heros-card__text, .section-heros .heros-info__text {
   padding-bottom: 2rem;
 }
-.section-about .info-card-container .info-card {
+.section-about .info-card-container .info-card, .section-heros .info-card-container .info-card {
   padding: 3rem 0 3rem 0;
 }
-.section-about .info-card-container .info-card__img {
+.section-about .info-card-container .info-card__img, .section-about .info-card-container .section-heros__container, .section-heros .info-card-container .info-card__img, .section-heros .info-card-container .section-heros__container {
   width: 100%;
 }
-.section-about .info-card-container .info-card__title {
+.section-about .info-card-container .info-card__title, .section-heros .info-card-container .info-card__title {
   font-size: 2.8rem;
   text-align: center;
   padding: 1rem 0 1rem 0;
@@ -150,7 +150,7 @@ header .video-promo-container__video {
 }
 .section-statistique__img {
   width: 100%;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0 3rem 0;
 }
 .section-statistique__title {
   font-size: 3.4rem;
@@ -169,6 +169,7 @@ header .video-promo-container__video {
   font-size: 1.6rem;
 }
 .section-statistique__button {
+  align-self: center;
   background-color: rgb(141, 0, 0);
   color: rgb(216, 216, 216);
   border: 1px solid rgb(141, 0, 0);
@@ -183,6 +184,10 @@ header .video-promo-container__video {
   color: black;
   border-color: #D2C8AE;
 }
+.section-statistique .section-statistique-flex {
+  display: flex;
+  flex-direction: column;
+}
 .section-statistique .text-stats-container {
   display: flex;
   margin: 2rem 0 2rem 0;
@@ -195,7 +200,53 @@ header .video-promo-container__video {
   padding-left: 5rem;
 }
 
-/*.container{
+.section-heros .heros-card-container {
+  padding-bottom: 3rem;
+}
+.section-heros .heros-card-container .heros-card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0 0 0;
+}
+.section-heros .heros-card-container .heros-card__img {
+  width: 100%;
+}
+.section-heros .heros-card-container .heros-card__title {
+  padding-top: 2rem;
+}
+.section-heros .heros-card-container .heros-card__button {
+  background-color: rgb(141, 0, 0);
+  color: rgb(216, 216, 216);
+  border: 1px solid rgb(141, 0, 0);
+  padding: 1rem;
+  border-radius: 3px;
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  align-self: center;
+}
+.section-heros .heros-card-container .heros-card__button:hover {
+  background-color: #D2C8AE;
+  color: black;
+  border-color: #D2C8AE;
+}
+
+.section-commentaire {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  background-image: url("../../medias/d4-world-bg-footer.webp");
+  background-size: cover;
+}
+.section-commentaire .form {
+  align-self: center;
+  background-color: #181818;
+  width: 100%;
+  max-width: 40rem;
+  padding: 3rem 0 3rem 0;
+  border-radius: 3px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+} /*.container{
     width: 90%;
 	max-width: 1600px;
 	margin: 0 auto;

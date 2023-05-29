@@ -22,7 +22,7 @@
                     <img class="burger-menu__trigger" src="medias/menuburger.svg" alt="burger menu">
                 </div>
                 <ul class="menu">
-                    <li><a class="menu__items" href="#">Aperçu</a></li>
+                    <li><a class="menu__items" href="#about">Aperçu</a></li>
                     <li><a class="menu__items" href="#">Classes</a></li>
                     <li><a class="menu__items" href="#">Médias</a></li>
                     <li><a class="menu__items" href="#">Vos commentaire</a></li>
@@ -40,7 +40,7 @@
         </div>
     </header>
     <main>
-        <section class="section-about">
+        <section id="about" class="section-about">
             <div class="section-about__container">
                 <div class="about">
                     <h2 class="about__title">Les enfers vous souhaitent la bienvenue</h2>
@@ -94,7 +94,7 @@
         <section class="section-statistique">
             <div class="section-statistique__container">
                 <img class="section-statistique__img" src="medias/statistique-beta.png" alt="Fiche de statistiques de la bêta">
-                <div>
+                <div class="section-statistique-flex">
                     <h2 class="section-statistique__title">Des statistiques</h2>
                     <p class="section-statistique__text">Dans le royaume de Diablo 4, les joueurs ont passé plus de 20 millions d'heures, faisant face à de nombreux périls et subissant plus de 17 millions de morts. Ils ont tué pas moins de 9 milliards de monstres, dont le célèbre Butcher et le redoutable Ashava. Les batailles livrées dans ce monde sombre sont épiques et les héros continuent d'augmenter, laissant leur marque sur les contes légendaires de Sanctuary.</p>
                     <div class="text-stats-container">
@@ -110,63 +110,64 @@
                     <a class="section-statistique__button" href="#">Voir plus</a>
                 </div>
             </div>
-            
         </section>
-        <section>
-            <div>
-                <h2>Héros de sanctuaire</h2>
-                <p>Créez un personnage et personnalisez-le avant d’affronter les horreurs innommables qui rôdent sur ces terres. Incarnez l’une des cinq classes, découvrez tout un arsenal de pièces d’équipement puissantes et sélectionnez judicieusement vos talents et capacités pour opposer une résistance sans faille aux ténèbres.</p>
-            </div>
-            <div>
-                <article>
-                    <img src="medias/d4-class-barbarian.png" alt="Barbare">
-                    <h3>Barbares</h3>
-                    <p>Les barbares sont dotés d’une force incomparable et disposent d’un arsenal adapté à toutes les situations. Ils poussent d’intimidants cris de guerre qui étourdissent les hordes ennemies à proximité.</p>
-                    <a href="#">Voir plus</a>
-                </article>
-                <article>
-                    <img src="medias/d4-class-druid.png" alt="Druide">
-                    <h3>Druides</h3>
-                    <p>Les druides sont de sauvages métamorphes, qui passent d’une forme à l’autre pour combattre aux côtés des créatures de la nature. Ils commandent aux forces de la terre, du vent et de la tempête, déchaînant la fureur de la nature pour infliger des effets dévastateurs.</p>
-                    <a href="#">Voir plus</a>
-                </article>
-                <article>
-                    <img src="medias/d4-class-necromancer.png" alt="Nécromancien">
-                    <h3>Necromanciens</h3>
-                    <p>Les nécromanciens sont des invocateurs rusés, qui font appel à des hordes de morts-vivants assoiffés de vengeance. Ils canalisent leur essence dans les os, le sang ou les ombres pour terrasser leurs adversaires.</p>
-                    <a href="#">Voir plus</a>
-                </article>
-                <article>
-                    <img src="medias/d4-class-rogue.png" alt="Voleur">
-                    <h3>Voleurs</h3>
-                    <p>Les voleurs sont des combattants agiles qui se spécialisent aussi bien dans les attaques à distance qu’en combat rapproché. Avec leurs armes imprégnées et leurs puissants combos, les voleurs sont capables de venir à bout de tous leurs ennemis.</p>
-                    <a href="#">Voir plus</a>
-                </article>
-            </div>
+        <section class="section-heros">
+            <div class="section-heros__container">
+                <div class="heros-info">
+                    <h2 class="heros-info__title">Héros de sanctuaire</h2>
+                    <p class="heros-info__text">Créez un personnage et personnalisez-le avant d’affronter les horreurs innommables qui rôdent sur ces terres. Incarnez l’une des cinq classes, découvrez tout un arsenal de pièces d’équipement puissantes et sélectionnez judicieusement vos talents et capacités pour opposer une résistance sans faille aux ténèbres.</p>
+                </div>
+                <div class="heros-card-container">
+                    <article class="heros-card">
+                        <img class="heros-card__img" src="medias/d4-class-barbarian.png" alt="Barbare">
+                        <h3 class="heros-card__title">Barbares</h3>
+                        <p class="heros-card__text">Les barbares sont dotés d’une force incomparable et disposent d’un arsenal adapté à toutes les situations. Ils poussent d’intimidants cris de guerre qui étourdissent les hordes ennemies à proximité.</p>
+                        <a class="heros-card__button" href="#">Voir plus</a>
+                    </article>
+                    <article class="heros-card">
+                        <img class="heros-card__img" src="medias/d4-class-druid.png" alt="Druide">
+                        <h3 class="heros-card__title">Druides</h3>
+                        <p class="heros-card__text">Les druides sont de sauvages métamorphes, qui passent d’une forme à l’autre pour combattre aux côtés des créatures de la nature. Ils commandent aux forces de la terre, du vent et de la tempête, déchaînant la fureur de la nature pour infliger des effets dévastateurs.</p>
+                        <a class="heros-card__button" href="#">Voir plus</a>
+                    </article>
+                    <article class="heros-card">
+                        <img class="heros-card__img" src="medias/d4-class-necromancer.png" alt="Nécromancien">
+                        <h3 class="heros-card__title">Necromanciens</h3>
+                        <p class="heros-card__text">Les nécromanciens sont des invocateurs rusés, qui font appel à des hordes de morts-vivants assoiffés de vengeance. Ils canalisent leur essence dans les os, le sang ou les ombres pour terrasser leurs adversaires.</p>
+                        <a class="heros-card__button" href="#">Voir plus</a>
+                    </article>
+                    <article class="heros-card">
+                        <img class="heros-card__img" src="medias/d4-class-rogue.png" alt="Voleur">
+                        <h3 class="heros-card__title">Voleurs</h3>
+                        <p class="heros-card__text">Les voleurs sont des combattants agiles qui se spécialisent aussi bien dans les attaques à distance qu’en combat rapproché. Avec leurs armes imprégnées et leurs puissants combos, les voleurs sont capables de venir à bout de tous leurs ennemis.</p>
+                        <a class="heros-card__button" href="#">Voir plus</a>
+                    </article>
+                </div>
+            </div> 
         </section>
-        <section>
-            <form action="#">
-                <h2>Vos commentaires</h2>
-                <p>Nous apprécions vos précieux commentaires car ils nous aident à améliorer et à améliorer votre expérience dans le domaine de Diablo 4.</p>
+        <section class="section-commentaire">
+            <form class="form" action="#">
+                <h2 class="form__title">Vos commentaires</h2>
+                <p class="form__text">Nous apprécions vos précieux commentaires car ils nous aident à améliorer et à améliorer votre expérience dans le domaine de Diablo 4.</p>
                 <div>
                     <div>
-                        <label for="txtNom">Nom</label>
-                        <input type="text" id="txtNom" name="txtNom" placeholder="Nom de famille">
+                        <label class="form__label" for="txtNom">Nom</label>
+                        <input class="form__input-txt" type="text" id="txtNom" name="txtNom" placeholder="Nom de famille">
                     </div>
                     <div>
-                        <label for="txtPrenom">Prénom</label>
-                        <input type="text" id="txtPrenom" name="txtPrenom" placeholder="Prénom">
+                        <label class="form__label" for="txtPrenom">Prénom</label>
+                        <input class="form__input-txt" type="text" id="txtPrenom" name="txtPrenom" placeholder="Prénom">
                     </div>
                 </div>
                 <div>
-                    <label for="courriel">Adresse courriel</label>
-                    <input type="email" id="courriel" name="courriel" placeholder="Adresse courriel">
+                    <label class="form__label" for="courriel">Adresse courriel</label>
+                    <input class="form__input-email" type="email" id="courriel" name="courriel" placeholder="Adresse courriel">
                 </div>
                 <div>
-                    <label for="commentaire">Commentaire</label>
-                    <textarea name="commentaire" id="commentaire">Vos commentaires...</textarea>
+                    <label class="form__label" for="commentaire">Commentaire</label>
+                    <textarea class="form__txt-area" name="commentaire" id="commentaire">Vos commentaires...</textarea>
                 </div>
-                <input class="btn" type="submit" value="Soumettre">
+                <input class="form__button" class="btn" type="submit" value="Soumettre">
             </form>
         </section>
     </main>

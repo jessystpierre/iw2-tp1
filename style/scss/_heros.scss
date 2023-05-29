@@ -1,0 +1,47 @@
+//@Extend fonctionne a moitié du temps donc j'ai arrêté de l'utiliser	
+.section-heros{
+    @extend .section-about;
+    &__container{
+        @extend .section-about__container;
+        @extend .info-card__img
+    }
+    .heros-info{
+        &__title{
+            @extend .about__title;
+        }
+        &__text{
+            @extend .about__text;
+        }
+    }
+    .heros-card-container{
+        padding-bottom: 3rem;
+        .heros-card{
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 0 0 0;
+            &__img{
+              width: 100%;
+            }
+            &__title{
+                @extend .about__title;
+                padding-top: 2rem;
+            }
+            &__text{
+                @extend .about__text;
+            }
+            &__button{
+                @include button($button-color, $text-color, $button-color);
+                align-self: center;
+                &:hover{
+                    background-color: $title-color;
+                    color: black;
+                    border-color: $title-color;
+                }
+            }
+            
+        }
+    }
+}
+
+
+
