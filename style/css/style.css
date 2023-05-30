@@ -212,6 +212,7 @@ header .video-promo-container__video {
   width: 100%;
 }
 .section-heros .heros-card-container .heros-card__title {
+  font-size: 2.8rem;
   padding-top: 2rem;
 }
 .section-heros .heros-card-container .heros-card__button {
@@ -242,11 +243,71 @@ header .video-promo-container__video {
   align-self: center;
   background-color: #181818;
   width: 100%;
-  max-width: 40rem;
+  max-width: 45rem;
   padding: 3rem 0 3rem 0;
   border-radius: 3px;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
-} /*.container{
+}
+.section-commentaire .form__container {
+  width: 90%;
+  margin: 0 auto;
+}
+.section-commentaire .form__title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-commentaire .form__text {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.section-commentaire .form__label {
+  display: none;
+}
+.section-commentaire .form__input-txt, .section-commentaire .form__txt-area, .section-commentaire .form__input-email {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border: none;
+  background-color: white;
+  color: black;
+}
+.section-commentaire .form__input-txt:focus, .section-commentaire .form__txt-area:focus, .section-commentaire .form__input-email:focus {
+  outline: none;
+  box-shadow: 0 0 5px white;
+}
+.section-commentaire .form__input-email {
+  margin: 2rem 0 2rem 0;
+}
+.section-commentaire .form__txt-area {
+  height: 10rem;
+}
+.section-commentaire .form__button {
+  background-color: rgb(141, 0, 0);
+  color: white;
+  border: 1px solid rgb(141, 0, 0);
+  padding: 1rem;
+  border-radius: 3px;
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2rem 0 0 0;
+  width: 100%;
+  max-width: 15rem;
+}
+.section-commentaire .form__button:hover {
+  background-color: white;
+  color: rgb(141, 0, 0);
+}
+.section-commentaire .form__button--center {
+  display: flex;
+  justify-content: center;
+}
+.section-commentaire .form .input-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*.container{
     width: 90%;
 	max-width: 1600px;
 	margin: 0 auto;

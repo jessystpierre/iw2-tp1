@@ -147,27 +147,33 @@
         </section>
         <section class="section-commentaire">
             <form class="form" action="#">
-                <h2 class="form__title">Vos commentaires</h2>
-                <p class="form__text">Nous apprécions vos précieux commentaires car ils nous aident à améliorer et à améliorer votre expérience dans le domaine de Diablo 4.</p>
-                <div>
-                    <div>
-                        <label class="form__label" for="txtNom">Nom</label>
-                        <input class="form__input-txt" type="text" id="txtNom" name="txtNom" placeholder="Nom de famille">
+                <div class="form__container">
+                    <h2 class="form__title">Vos commentaires</h2>
+                    <p class="form__text">Chers joueurs de Diablo 4, merci infiniment pour vos précieux commentaires. Votre passion et vos retours sont essentiels pour améliorer le jeu.</p>
+                    <div class="input-flex">
+                        <div class="input-flex__container">
+                            <label class="form__label" for="txtNom">Nom</label>
+                            <input class="form__input-txt" type="text" id="txtNom" name="txtNom" placeholder="Nom de famille">
+                        </div>
+                        <div>
+                            <label class="form__label" for="txtPrenom">Prénom</label>
+                            <input class="form__input-txt" type="text" id="txtPrenom" name="txtPrenom" placeholder="Prénom">
+                        </div>
                     </div>
                     <div>
-                        <label class="form__label" for="txtPrenom">Prénom</label>
-                        <input class="form__input-txt" type="text" id="txtPrenom" name="txtPrenom" placeholder="Prénom">
+                        <label class="form__label" for="courriel">Adresse courriel</label>
+                        <input class="form__input-email" type="email" id="courriel" name="courriel" placeholder="Adresse courriel">
+                    </div>
+                    <div>
+                        <label class="form__label" for="commentaire">Commentaire</label>
+                        <textarea class="form__txt-area" name="commentaire" id="commentaire" placeholder="Vos commentaires..."></textarea>
+                    </div>
+                    <div class="form__button--center">
+                        <input class="form__button" type="submit" value="Soumettre">
                     </div>
                 </div>
-                <div>
-                    <label class="form__label" for="courriel">Adresse courriel</label>
-                    <input class="form__input-email" type="email" id="courriel" name="courriel" placeholder="Adresse courriel">
-                </div>
-                <div>
-                    <label class="form__label" for="commentaire">Commentaire</label>
-                    <textarea class="form__txt-area" name="commentaire" id="commentaire">Vos commentaires...</textarea>
-                </div>
-                <input class="form__button" class="btn" type="submit" value="Soumettre">
+
+                
             </form>
         </section>
     </main>

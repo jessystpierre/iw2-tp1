@@ -8,9 +8,63 @@
         align-self: center;
         background-color: $background-color-1;
         width: 100%;
-        max-width: 40rem;
+        max-width: 45rem;
         padding: 3rem 0 3rem 0;
         border-radius: 3px;
         box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+        &__container{
+            width: 90%;
+            margin: 0 auto;
+        }
+        &__title{
+            font-size: 3.4rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &__text{
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        &__label{
+            display: none;
+        }
+        &__input-txt{
+            width: 100%;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            border: none;
+            background-color: white;
+            color: black;
+            &:focus{
+                outline: none;
+                box-shadow: 0 0 5px white;
+            }
+        }
+        &__input-email{
+            @extend .form__input-txt;
+            margin: 2rem 0 2rem 0;
+            
+        }
+        &__txt-area{
+            @extend .form__input-txt;
+            height: 10rem;
+        }
+        &__button{
+            @include button($button-color, white, $button-color);
+            margin: 2rem 0 0 0;
+            width: 100%;
+            max-width: 15rem;
+            &:hover{
+                background-color: white;
+                color: $button-color;
+            }
+            &--center{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .input-flex{
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
