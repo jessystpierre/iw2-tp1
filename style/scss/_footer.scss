@@ -1,0 +1,70 @@
+footer{
+    background-color: $background-color-3;
+    padding: 0 2rem 0 2rem;
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer-logo{
+            width: 100%;
+            max-width: 30rem; 
+        }
+        .footer-nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem 0 3rem 0;
+            &__links{
+                @include link(white, none);
+                &:hover{
+                    color: $title-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .credit-container{
+        padding-top: 3rem;
+        border-top: 1px solid white;
+        @extend .footer-container;
+        .socials{
+            margin: 2rem 0 2rem 0;
+            &__links{
+                padding: 0 1rem 0 1rem;
+                &--color{
+                    scale: 1;
+                    transition: all 0.2s ease-in-out;
+                    &:hover{
+                        scale: 1.2;
+                        transition: all 0.2s ease-in-out;
+                    }
+                }   
+            }
+        }
+        .contact-info{
+            display: flex;
+            padding-bottom: 3rem;
+            &__phone:hover{
+                color: $title-color;
+            }
+            &__email:hover{
+                @extend .contact-info__phone:hover;
+            }
+            &__phone-img{
+                padding-right: 0.5rem;
+            }
+            &__mail-img{
+                @extend .contact-info__phone-img;
+            }
+            .phone-container{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin: 0 2rem 0 2rem;
+            }
+            .email-container{
+                @extend .phone-container;
+            }
+        }
+    }
+}
