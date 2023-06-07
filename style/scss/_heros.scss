@@ -43,6 +43,22 @@
         }
     }
 }
-
-
+@media screen and (min-width: 960px){
+    .heros-card-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .heros-info{
+        width: 70%;   
+    }
+    .heros-card{
+        width: 22%;
+        height: 650px;
+        &__button{
+            margin-top: auto;
+        }
+    }
+}
 

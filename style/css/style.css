@@ -360,6 +360,24 @@ header .video-promo-container__video {
   border-color: #D2C8AE;
 }
 
+@media screen and (min-width: 960px) {
+  .heros-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heros-info {
+    width: 70%;
+  }
+  .heros-card {
+    width: 22%;
+    height: 650px;
+  }
+  .heros-card__button {
+    margin-top: auto;
+  }
+}
 .section-commentaire {
   display: flex;
   justify-content: center;
