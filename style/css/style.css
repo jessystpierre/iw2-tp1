@@ -310,6 +310,24 @@ header .video-promo-container__video {
   padding-left: 5rem;
 }
 
+@media screen and (min-width: 960px) {
+  .section-statistique__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 0 6rem 0;
+  }
+  .section-statistique__img {
+    width: 48%;
+    padding: 0;
+  }
+  .section-statistique__button {
+    align-self: flex-start;
+  }
+  .section-statistique .section-statistique-flex {
+    width: 48%;
+  }
+}
 .section-heros .heros-card-container {
   padding-bottom: 3rem;
 }

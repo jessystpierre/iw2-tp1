@@ -49,3 +49,24 @@
         }
     }
 }
+@media screen and (min-width: 960px){
+    .section-statistique{
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6rem 0 6rem 0;
+        }
+        &__img{
+            width: 48%;
+            padding: 0;
+        }
+        &__button{
+            align-self: flex-start;
+        }
+        .section-statistique-flex{
+            width: 48%;
+        }
+    }
+
+}
