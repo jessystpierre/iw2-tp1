@@ -1,9 +1,42 @@
+.section-gallery{
+    background-color: $background-color-1;
+}
 .gallery{
     padding: 3rem 1.5rem 3rem 1.5rem ;
-    background-color: $background-color-1;
-    &__img{
+    img{
         width: 100%;
         padding: 1rem 0 1rem 0;
-
+    }
+}
+@media screen and (min-width: 960px){
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        padding: 6rem 0 6rem 0;
+        img{
+            padding: 0;
+            height: 100%;
+        }
+        &__img1{
+            grid-area: 1 / 4 / 4 / 9;
+        }
+        &__img2{
+            grid-area: 4 / 6 / 7 / 11;
+        }
+        &__img3{
+            grid-area: 4 / 4 / 6 / 6;
+        }
+        &__img4{
+            grid-area: 2 / 1 / 5 / 4;
+        }
+        &__img5{
+            grid-area: 3 / 11 / 6 / 13;
+        }
+        &__img6{
+            grid-area: 2 / 9 / 4 / 11;
+        }
     }
 }

@@ -17,23 +17,25 @@
             <video class="background-video-container__video" src="medias/d4-bg-desktop.webm" loop muted autoplay></video>
         </div>
         <div class="container">
-            <nav>
-                <div class="burger-menu">
-                    <img class="burger-menu__trigger" src="medias/menuburger.svg" alt="burger menu">
-                </div>
-                <ul class="menu">
-                    <li><a class="menu__items" href="#about">Aperçu</a></li>
-                    <li><a class="menu__items" href="#medias">Médias</a></li>
-                    <li><a class="menu__items" href="#d4-classes">Classes</a></li>
-                    <li><a class="menu__items" href="#comments">Vos commentaire</a></li>
-                    <li><a class="menu__items hidden-desktop close-menu" href="#">Fermer</a></li>
-                </ul>
-            </nav>
-            <h1 class="logo">
-                <a href="#">
-                    <img class="logo__image" src="medias/d4-logo.webp" alt="Diablo IV">
-                </a>
-            </h1>
+            <div class="flex-container">
+                <nav>
+                    <div class="burger-menu">
+                        <img class="burger-menu__trigger" src="medias/menuburger.svg" alt="burger menu">
+                    </div>
+                    <ul class="menu">
+                        <li><a class="menu__items" href="#about">Aperçu</a></li>
+                        <li><a class="menu__items" href="#medias">Médias</a></li>
+                        <li><a class="menu__items" href="#d4-classes">Classes</a></li>
+                        <li><a class="menu__items" href="#comments">Vos commentaire</a></li>
+                        <li class="hidden-desktop"><a class="menu__items close-menu" href="#">Fermer</a></li>
+                    </ul>
+                </nav>
+                <h1 class="logo">
+                    <a href="#">
+                        <img class="logo__image" src="medias/d4-logo.webp" alt="Diablo IV">
+                    </a>
+                </h1>
+            </div>
             <div class="video-promo-container">
                 <video class="video-promo-container__video" src="medias/d4-bande-annonce.mp4" controls poster="medias/D4_Thumbnail.webp"></video>
             </div>
@@ -41,7 +43,7 @@
     </header>
     <main>
         <section id="about" class="section-about">
-            <div class="section-about__container">
+            <div class="section-about__container container">
                 <div class="about">
                     <h2 class="about__title">Les enfers vous souhaitent la bienvenue</h2>
                     <p class="about__text">Diablo® IV propose une expérience de jeu de rôle et d’action ultime, offrant une quantité inépuisable d’ennemis à abattre, d’innombrables techniques à maîtriser, des donjons cauchemardesques et un butin légendaire. Lancez-vous dans la campagne, en solo ou à plusieurs, dans un environnement d’une beauté sombre ou explorez un vaste monde partagé où les joueurs et joueuses se retrouveront dans les villes pour commercer, s’allieront pour combattre les boss hors instance ou se lanceront dans des zones JcJ afin de mettre leurs compétences à l’épreuve contre d’autres personnes.</p>
@@ -65,31 +67,34 @@
                 </div>
             </div>   
         </section>
-        <section id="medias" class="gallery">
-            <picture>
-                <source srcset="medias/galerie-1-desktop.png" media="(min-width: 1200px)"/>
-                <img class="gallery__img" src="medias/galerie-1.webp" alt="La classe barbare dans le monde de diablo 4">
-            </picture>
-            <picture>
-                <source srcset="medias/galerie-2-desktop.png" media="(min-width: 1200px)"/>
-                <img class="gallery__img" src="medias/galerie-2.webp" alt="Entrée de grotte du jeux">
-            </picture>
-            <picture>
-                <source srcset="medias/galerie-3-desktop.png" media="(min-width: 1200px)"/>
-                <img class="gallery__img" src="medias/galerie-3.webp" alt="Art conceptuel de zone du jeux">
-            </picture> 
-            <picture>
-                <source srcset="medias/galerie-4-desktop.png" media="(min-width: 1200px)"/>
-                <img class="gallery__img" src="medias/galerie-4.webp" alt="Art conceptuel de zone du jeux">
-            </picture>
-            <picture>
-                <source srcset="medias/galerie-5-desktop.png" media="(min-width: 1200px)"/>
-                <img class="gallery__img" src="medias/galerie-5.webp" alt="Art conceptuel de zone du jeux">
-            </picture>
-            <picture>
-                <source srcset="medias/galerie-6-desktop.png" media="(min-width: 1200px)"/>
-                <img class="gallery__img" src="medias/galerie-6.webp" alt="La classe druide en jeux">
-            </picture>        
+        <section id="medias" class="section-gallery">
+            <div class="container gallery">
+                <picture class="gallery__img1">
+                    <source srcset="medias/galerie-1-desktop.png" media="(min-width: 960px)"/>
+                    <img src="medias/galerie-1.webp" alt="La classe barbare dans le monde de diablo 4">
+                </picture>
+                <picture class="gallery__img2">
+                    <source srcset="medias/galerie-2-desktop.png" media="(min-width: 960px)"/>
+                    <img src="medias/galerie-2.webp" alt="Entrée de grotte du jeux">
+                </picture>
+                <picture class="gallery__img3">
+                    <source srcset="medias/galerie-3-desktop.png" media="(min-width: 960px)"/>
+                    <img src="medias/galerie-3.webp" alt="Art conceptuel de zone du jeux">
+                </picture> 
+                <picture class="gallery__img4">
+                    <source srcset="medias/galerie-4-desktop.png" media="(min-width: 960px)"/>
+                    <img src="medias/galerie-4.webp" alt="Art conceptuel de zone du jeux">
+                </picture>
+                <picture class="gallery__img5">
+                    <source srcset="medias/galerie-5-desktop.png" media="(min-width: 960px)"/>
+                    <img src="medias/galerie-5.webp" alt="Art conceptuel de zone du jeux">
+                </picture>
+                <picture class="gallery__img6">
+                    <source srcset="medias/galerie-6-desktop.png" media="(min-width: 960px)"/>
+                    <img src="medias/galerie-6.webp" alt="La classe druide en jeux">
+                </picture> 
+            </div>
+                   
         </section>
         <section class="section-statistique">
             <div class="section-statistique__container">

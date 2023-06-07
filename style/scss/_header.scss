@@ -73,3 +73,70 @@ header{
     }
 
 }
+@media screen and (min-width: 960px){
+    header{
+        .background-video-container{
+            display: initial;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            
+            &__video{
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+        .background-image-container{
+            display: none;
+        }
+        .container{
+            width: 90%;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 0 2rem 0;
+
+            .burger-menu{
+            
+                display: none;
+            }
+            .menu{
+                display: initial;
+                li{
+                    display: inline-block;
+                }
+                .hidden-desktop{
+                    display: none;
+                }
+                &__items{
+                    font-size: 2.4rem;
+                }
+            }
+            .logo{
+                &__image{
+                    max-width: 30rem;
+                }
+            }
+        }
+        .video-promo-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            &__video{
+                max-width: 100rem;
+                padding: 9rem 0 9rem 0;
+            }
+            
+        }
+        
+    }
+    
+}

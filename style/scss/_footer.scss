@@ -48,7 +48,7 @@ footer{
                 color: $title-color;
             }
             &__email:hover{
-                @extend .contact-info__phone:hover;
+                color: $title-color;
             }
             &__phone-img{
                 padding-right: 0.5rem;
@@ -64,6 +64,7 @@ footer{
             }
             .email-container{
                 @extend .phone-container;
+
             }
         }
     }
