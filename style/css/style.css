@@ -143,6 +143,7 @@ header .video-promo-container__video {
   }
   header .flex-container .menu li {
     display: inline-block;
+    padding: 0 2rem 0 2rem;
   }
   header .flex-container .menu .hidden-desktop {
     display: none;
@@ -361,21 +362,21 @@ header .video-promo-container__video {
 }
 
 @media screen and (min-width: 960px) {
-  .heros-card-container {
+  .section-heros .heros-card-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  .heros-info {
-    width: 70%;
-  }
-  .heros-card {
+  .section-heros .heros-card-container .heros-card {
     width: 22%;
-    height: 650px;
+    height: 600px;
   }
-  .heros-card__button {
+  .section-heros .heros-card-container .heros-card__button {
     margin-top: auto;
+  }
+  .section-heros .heros-info {
+    width: 70%;
   }
 }
 .section-commentaire {
