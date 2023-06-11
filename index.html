@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style/css/normalize.css">
     <link rel="stylesheet" href="style/css/style.css">
     <script src="js/mobile-menu.js" defer></script>
+    <script src="js/validation-form.js" defer></script>
+    <link rel="icon" type="image/png" href="/medias/favicon.png">
 </head>
 <body >
+    <a class="content-link" href="#about" tabindex="1">Allez au contenu</a>
     <header>
         <div class="background-image-container">
             <img class="background-image-container__image" src="medias/d4-bg-mobile.webp" alt="image de fond mobile">
@@ -31,7 +34,7 @@
                     </ul>
                 </nav>
                 <h1 class="logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img class="logo__image" src="medias/d4-logo.webp" alt="Diablo IV">
                     </a>
                 </h1>
@@ -151,36 +154,43 @@
             </div> 
         </section>
         <section id="comments" class="section-commentaire">
-            <form class="form" action="#">
-                <div class="form__container">
-                    <h2 class="form__title">Vos commentaires</h2>
-                    <p class="form__text">Chers joueurs de Diablo 4, merci infiniment pour vos précieux commentaires. Votre passion et vos retours sont essentiels pour améliorer le jeu.</p>
-                    <div class="input-flex">
-                        <div class="input-flex__container">
-                            <label class="form__label" for="txtNom">Nom</label>
-                            <input class="form__input-txt" type="text" id="txtNom" name="txtNom" placeholder="Nom de famille">
+            <div class="container">
+                <form id="form" class="form" action="confirmation.html#confirmation" onsubmit="return validateForm()" >
+                    <div class="form__container">
+                        <h2 class="form__title">Vos commentaires</h2>
+                        <p class="form__text">Chers joueurs de Diablo 4, merci infiniment pour vos précieux commentaires. Votre passion et vos retours sont essentiels pour améliorer le jeu.</p>
+                        <div class="input-flex">
+                            <div class="input-flex__container input-control">
+                                <label class="form__label" for="txtNom">Nom</label>
+                                <input class="form__input-txt" type="text" id="txtNom" name="txtNom" placeholder="Nom de famille">
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="input-control">
+                                <label class="form__label" for="txtPrenom">Prénom</label>
+                                <input class="form__input-txt" type="text" id="txtPrenom" name="txtPrenom" placeholder="Prénom">
+                                <div class="errorMessage"></div>
+                            </div>
                         </div>
-                        <div>
-                            <label class="form__label" for="txtPrenom">Prénom</label>
-                            <input class="form__input-txt" type="text" id="txtPrenom" name="txtPrenom" placeholder="Prénom">
+                        <div class="input-control">
+                            <label class="form__label" for="courriel">Adresse courriel</label>
+                            <input class="form__input-email" type="email" id="courriel" name="courriel" placeholder="Adresse courriel">
+                            <div class="errorMessage"></div>
+                        </div>
+                        <div class="input-control">
+                            <label class="form__label" for="commentaire">Commentaire</label>
+                            <textarea class="form__txt-area" name="commentaire" id="commentaire" placeholder="Vos commentaires..."></textarea>
+                            <div class="errorMessage"></div>
+                        </div>
+                        <div class="form__button--center">
+                            <input class="form__button" type="submit" value="Soumettre">
                         </div>
                     </div>
-                    <div>
-                        <label class="form__label" for="courriel">Adresse courriel</label>
-                        <input class="form__input-email" type="email" id="courriel" name="courriel" placeholder="Adresse courriel">
-                    </div>
-                    <div>
-                        <label class="form__label" for="commentaire">Commentaire</label>
-                        <textarea class="form__txt-area" name="commentaire" id="commentaire" placeholder="Vos commentaires..."></textarea>
-                    </div>
-                    <div class="form__button--center">
-                        <input class="form__button" type="submit" value="Soumettre">
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
+            
         </section>
     </main>
-    <footer>
+    <footer class="container">
         <div class="footer-container">
             <img class="footer-logo" src="medias/d4-logo.webp" alt="Diablo IV">
             <div class="footer-nav">

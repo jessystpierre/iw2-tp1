@@ -10,6 +10,8 @@
 @import 'heros';
 @import 'voscommentaires';
 @import 'footer';
+@import 'confirmation';
+
 
 @media screen and (min-width: 960px){
     .container{
@@ -18,19 +20,3 @@
         margin: 0 auto;
     }
 }
-/*.container{
-    width: 90%;
-	max-width: 1600px;
-	margin: 0 auto;
-    
-}
-.video-container{
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-    &__video{
-        width: 100%;
-        object-fit: cover;
-    }
-}*/

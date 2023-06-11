@@ -69,3 +69,16 @@ footer{
         }
     }
 }
+@media screen and (min-width: 960px){
+    footer{
+        .footer-container{
+            .footer-logo{
+                width: 100%;
+                max-width: 30rem; 
+            }
+            .footer-nav{
+                flex-direction: row;   
+            }
+        }
+    }
+}

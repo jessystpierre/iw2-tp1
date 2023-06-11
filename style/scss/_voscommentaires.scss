@@ -12,6 +12,7 @@
         padding: 3rem 0 3rem 0;
         border-radius: 3px;
         box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+        margin: 3rem 0 3rem 0;
         &__container{
             width: 90%;
             margin: 0 auto;
@@ -41,11 +42,12 @@
         }
         &__input-email{
             @extend .form__input-txt;
-            margin: 2rem 0 2rem 0;
+            margin: 2rem 0 0 0;
             
         }
         &__txt-area{
             @extend .form__input-txt;
+            margin-top: 2rem;
             height: 10rem;
         }
         &__button{
@@ -66,5 +68,45 @@
             display: flex;
             justify-content: space-between;
         }
+        .input-control {
+            &.success {
+                input, textarea {
+                    border: 2px solid #09c372;
+                }
+            }
+            &.error {
+                input, textarea {
+                    border: 2px solid #ff3860;
+                }
+            }
+           
+        }
+
+        .input-control input:focus {
+            outline: 0;
+        }
+        .input-control.success input {
+            border: 2px solid #09c372;
+        }
+        .input-control.error input {
+            border: 2px solid #ff3860;
+        }
+        .input-control .errorMessage {
+            color: #ff3860;
+            font-size: 14px;
+            height: 13px;
+        }
+    }
+}
+@media screen and (min-width: 960px){
+    .section-commentaire{
+        height: 100vh;
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
     }
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/css/normalize.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <script src="js/mobile-menu.js" defer></script>
+    <script src="js/validation-form.js" defer></script>
+    <link rel="icon" type="image/png" href="/medias/favicon.png">
+</head>
+<body >
+    <a class="content-link" href="#about" tabindex="1">Allez au contenu</a>
+    <header>
+        <div class="background-image-container">
+            <img class="background-image-container__image" src="medias/d4-bg-mobile.webp" alt="image de fond mobile">
+        </div>
+        <div class="background-video-container">
+            <video class="background-video-container__video" src="medias/d4-bg-desktop.webm" loop muted autoplay></video>
+        </div>
+        <div class="container">
+            <div class="flex-container">
+                <nav>
+                    <div class="burger-menu">
+                        <img class="burger-menu__trigger" src="medias/menuburger.svg" alt="burger menu">
+                    </div>
+                    <ul class="menu">
+                        <li><a class="menu__items" href="#about">Aperçu</a></li>
+                        <li><a class="menu__items" href="#medias">Médias</a></li>
+                        <li><a class="menu__items" href="#d4-classes">Classes</a></li>
+                        <li><a class="menu__items" href="#comments">Vos commentaire</a></li>
+                        <li class="hidden-desktop"><a class="menu__items close-menu" href="#">Fermer</a></li>
+                    </ul>
+                </nav>
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img class="logo__image" src="medias/d4-logo.webp" alt="Diablo IV">
+                    </a>
+                </h1>
+            </div>
+            <div class="video-promo-container">
+                <video class="video-promo-container__video" src="medias/d4-bande-annonce.mp4" controls poster="medias/D4_Thumbnail.webp"></video>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="confirmation" class="container">
+            <h2 class="confirmation">Formulaire envoyé avec succès. Merci de vos commentaires!</h2>
+        </section>
+        
+    </main>
+    <footer class="container">
+        <div class="footer-container">
+            <img class="footer-logo" src="medias/d4-logo.webp" alt="Diablo IV">
+            <div class="footer-nav">
+                <a class="footer-nav__links" href="#">À propos</a>
+                <a class="footer-nav__links" href="#">Carrières</a>
+                <a class="footer-nav__links" href="#">Prix</a>
+                <a class="footer-nav__links" href="#">FAQ</a>
+                <a class="footer-nav__links" href="#">Politique de confidentialité</a>
+            </div>
+        </div>
+        <div class="credit-container">
+            <div class="name-container">
+                <p>Fait par : Jessy St-Pierre</p>
+            </div>
+            <div class="socials">
+                <a class="socials__links" target=”_blank” href="https://www.facebook.com/jessy.stpierre"><img class="socials__links--color" src="medias/facebook.svg" alt="Icone facebook"></a>
+                <a class="socials__links" target=”_blank” href="https://twitter.com/Jesse_Clown"><img class="socials__links--color" src="medias/twitter.svg" alt="Icone twitter"></a>
+                <a class="socials__links" target=”_blank” href="https://www.instagram.com/jesseclown"><img class="socials__links--color" src="medias/insta.svg" alt="Icone instagram"></a>
+            </div>
+            <div class="contact-info">
+                <div class="phone-container">
+                    <img class="contact-info__phone-img" src="medias/telephone.svg" alt="icone téléphone">
+                    <a class="contact-info__phone" href="tel:+14189052287">418-905-2287</a>
+                </div>
+                <div class="email-container">
+                    <img class="contact-info__mail-img" src="medias/Mail.svg" alt="icone enveloppe">
+                    <a class="contact-info__email" href="mailto:jessy.stpierre@live.com">jessy.stpierre@live.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

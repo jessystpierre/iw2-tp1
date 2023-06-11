@@ -28,10 +28,22 @@ h1, h2, h3, h4, h5, h6 {
 
 html {
   font-size: 62.5%;
+  background-color: black;
 }
 
 .hidden {
   display: none;
+}
+
+a:focus, input:focus {
+  outline: 2px solid #D2C8AE;
+}
+
+.content-link {
+  font-size: 0;
+}
+.content-link:focus {
+  font-size: 1.6rem;
 }
 
 header {
@@ -394,6 +406,7 @@ header .video-promo-container__video {
   padding: 3rem 0 3rem 0;
   border-radius: 3px;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  margin: 3rem 0 3rem 0;
 }
 .section-commentaire .form__container {
   width: 90%;
@@ -423,9 +436,10 @@ header .video-promo-container__video {
   box-shadow: 0 0 5px white;
 }
 .section-commentaire .form__input-email {
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 0 0;
 }
 .section-commentaire .form__txt-area {
+  margin-top: 2rem;
   height: 10rem;
 }
 .section-commentaire .form__button {
@@ -453,7 +467,38 @@ header .video-promo-container__video {
   display: flex;
   justify-content: space-between;
 }
+.section-commentaire .form .input-control.success input, .section-commentaire .form .input-control.success textarea {
+  border: 2px solid #09c372;
+}
+.section-commentaire .form .input-control.error input, .section-commentaire .form .input-control.error textarea {
+  border: 2px solid #ff3860;
+}
+.section-commentaire .form .input-control input:focus {
+  outline: 0;
+}
+.section-commentaire .form .input-control.success input {
+  border: 2px solid #09c372;
+}
+.section-commentaire .form .input-control.error input {
+  border: 2px solid #ff3860;
+}
+.section-commentaire .form .input-control .errorMessage {
+  color: #ff3860;
+  font-size: 14px;
+  height: 13px;
+}
 
+@media screen and (min-width: 960px) {
+  .section-commentaire {
+    height: 100vh;
+  }
+  .section-commentaire .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 footer {
   background-color: #000000;
   padding: 0 2rem 0 2rem;
@@ -521,25 +566,25 @@ footer .credit-container .contact-info .phone-container, footer .credit-containe
   margin: 0 2rem 0 2rem;
 }
 @media screen and (min-width: 960px) {
+  footer .footer-container .footer-logo, footer .credit-container .footer-logo {
+    width: 100%;
+    max-width: 30rem;
+  }
+  footer .footer-container .footer-nav, footer .credit-container .footer-nav {
+    flex-direction: row;
+  }
+}
+.confirmation {
+  font-size: 3.6rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 960px) {
   .container {
     width: 90%;
     max-width: 1600px;
     margin: 0 auto;
   }
-}
-/*.container{
-    width: 90%;
-	max-width: 1600px;
-	margin: 0 auto;
-
-}
-.video-container{
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-    &__video{
-        width: 100%;
-        object-fit: cover;
-    }
-}*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
